@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>Login Design</title>
+<link type="text/css" href="lgn.css">
+</head>
+<body>
+	<div class="loginbox">
+		<h1>
+			<a href="index.html"> <img src="media/logo.png" alt="내 로고">
+			</a>
+		</h1>
+
+		<form action="#">
+			<!-- 구역이 한 개인 경우, 작성하지 않아도 됨 -->
+			<fieldset>
+				<legend>로그인 구역</legend>
+				<h2>ID 로그인</h2>
+				<!-- 모든 input, select, textarea 태그는 label 태그를 연결하는 게 웹접근성에 맞음 -->
+				<label for="loginid" class="away">아이디 입력</label>
+				<input type="text" id="loginid" placeholder="아이디">
+				<label for="loginpass" class="away">비밀번호 입력</label>
+				<input type="password" id="loginpass" placeholder="비밀번호">
+
+				<div class="chechline">
+					<label for="loginchk" class="loginchk"> <input
+						type="checkbox" id="loginchk">
+						<i class="circle"></i>
+						<span class="text">로그인 상태 유지</span>
+					</label> <label for=":ipchk" class="ipchk">
+					<input type="checkbox" id="ipchk"> <span class="text">IP 보안</span>
+					<i class="circle"></i>
+					</label>
+				</div>
+
+				<button type="submit">로그인</button>
+			</fieldset>
+		</form>
+
+		<div class="listbox">
+			<ul>
+				<li><a href="#">아이디/비밀번호 찾기</a></li>
+				<li><a href="#">회원 가입</a></li>
+			</ul>
+		</div>
+	</div>
+</body>
+</html>

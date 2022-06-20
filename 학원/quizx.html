@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>quiz</title>
+</head>
+<body>
+    <p id="p1"></p>
+    <p id="p2"></p>
+    <p id="p3"></p>
+    <p id="p4"></p>
+    <p id="p5"></p>
+    <p id="p6"></p>
+    <p id="p7"></p>
+    <p id="p8"></p>
+    <p id="p9"></p>
+
+    <h3> 1번 문제 </h3>
+
+    <script>
+    var d = new Date();
+    
+    document.write("현재 시간 : " + d.toGMTString() + "<br>");
+
+    <h3> 2번 문제 </h3>
+    
+    const d = new Date();
+    year = d.getYear();
+
+    document.write(year);
+
+    <h3> 3번 문제 </h3>
+
+    const d = new Date();
+    month = d.getMonth();
+
+    document.write(month);
+
+    <h3> 4번 문제 </h3>
+
+    const d = new Date();
+    Hour = d.getHour();
+
+    document.write(Hour);
+
+    </script>
+</body>
+</html>
+
+<!--
+    1. 현재 시작 정보를 지닌 객체 d를 만들고 id="p1"에 출력
+    2. d에서 년도를 얻어서 p2에 출력
+    3. d에서 월을 얻어서 p2에 출력
+    4. d에서 시간을 얻어서 p4에 출력
+    5. let msec = Date.parse("2022-03-25"); 를 사용하여 p5에 출력하고 그 값의 의미를 알아보라
+    6. "Banana", "Orange", "Apple", "Kiwi"를 원소값으로 갖는 배열 fruits를 만들고 오름차순으로 정렬하여 p6에 출력
+    7. fruits의 원소개수를 p7에 출력
+    8. 객체형 변수 person을 만드는데 속성은 fName,lName, id이며 값은 임의로 집어 넣는다.
+       메서도는 fullName이며 블록의 내용은 fName과 lName을 결합한 값을 반환한다.
+       만든 후 fName을 p8에 출력하고 메서드를 호출한 값을 p9에 출력
+-->

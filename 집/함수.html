@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>함수</title>
+</head>
+<body>
+    <script>
+        // function showError(){
+        //     alert('에러가 발생했습니다. 새로고침 해주세요.')
+        // }
+        // showError();
+
+        //ex1
+
+        // function sayHello(name){
+        //     const msg = `Hello, ${name}`;
+        //     console.log(msg);
+        // }
+        // sayHello('Mike');
+        // sayHello('Tom');
+        // sayHello('John');
+
+        //ex2
+
+        // function sayHello(name) {
+        //     console.log(name)
+        //     let msg = `Hello`;
+        //     if(name){
+        //         msg = `Hello, ${name}`;
+        //     }
+        //     console.log(msg);
+        // }
+
+        // sayHello();
+
+        //ex3
+
+        // function sayHello(name){
+        //     let msg = 'Hello';
+        //     if(name){
+        //         msg += `, ${name}`;
+        //     }
+        //     console.log(msg);
+        // }
+        
+        // sayHello();
+        // sayHello('Mike');
+
+        //ex4
+
+        // let msg = 'Hello';
+        // console.log('함수 호출 전')
+        // console.log(msg)
+
+        // function sayHello(name) {
+        //     if(name){
+        //         msg += `, ${name}`;
+        //     }
+        //     console.log('함수 내부')
+        //     console.log(msg);
+        // }
+        // sayHello('Mike');
+        // console.log('함수 호출 후')
+        // console.log(msg);
+
+        //ex5
+
+        // let msg ="welcome";  //전역변수
+        // console.log(msg)
+
+        // function sayHello(name){
+        //     let msg = "Hello"  //지역변수
+        //     console.log(msg + ' ' + name);
+        // }
+        // sayHello('Mike');
+        // console.log(msg)
+
+        //ex6
+        //전역변수보다 지역변수를 사용하는게 더 관리하기 용이하다.
+
+        // let name = "Mike";
+        // function sayHello(name){
+        //     console.log(name)
+        // }
+        
+        // sayHello();
+        // sayHello('Jane');
+
+        //ex7
+
+        // function sayHello(name) {
+        //     let newName = name || 'friend';
+        //     let msg = `Hello, ${newName}`
+        //     console.log(msg)
+        // }
+
+        // sayHello();
+        // sayHello('Jane');
+
+        //ex8
+
+        // function add(num1, num2) {
+        //     return num1 + num2;
+        // }
+
+        // const result = add(2,3);
+        // console.log(result)
+
+        //ex9
+
+        function showError(){
+            alert('에러가 발생했습니다.');
+            return;
+            alert('이 코드는 절대 실행되지 않습니다.');
+        }
+        const result = showError();
+        console.log(result);
+    </script>
+    
+</body>
+</html>

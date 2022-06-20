@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<title>DOM 객체의 이벤트 리스너 프로퍼티에 함수 등록</title>
+<script>
+var p;
+function init() { // 문서가 완전히 로드되었을 때 호출
+   p = document.getElementById("p");
+   //p태그엘리먼트르 DOM으로 변환
+   p.onmouseover = over; 
+   // DOM객체 p의 마우스관련 리스너 속성..over()를 onmouseover 리스너로 등록
+   // onmouseover는 시작태그의 리스너와 이름이 동일, 값으로는 함수가 오는데 직접 익명의 함수를 만들거나
+   //별도의 만들어진 함수의 이름만 사용(호출하면 에러)
+   p.onmouseout = out; // out()를 onmouseout 리스너로 등록
+}
+
+
+function over() {
+   p.style.backgroundColor="orchid";
+}
+function out() {
+   p.style.backgroundColor="white";
+}
+</script>
+</head>
+<body onload="init()">
+<h3>DOM 객체의 이벤트 리스너 프로퍼티에 함수 등록</h3>
+<hr>
+<p id="p">마우스 올리면 orchid 색으로 변경</p>
+</body>
+</html>
