@@ -121,12 +121,12 @@
             var idLen = val.length;
             console.log(idLen);
 
-            If(idLen > '0'){
+            If(idLen > '0');{
                 $('#id').css("background-color","#B5B2FF");
-            }else if(idLen == '0'){
+            } else if(idLen == '0'){
                 $('#id').css("background-color","transparent");
-            }
-        }
+            };
+        };
         function pwLength(val){
             var pwLen = val.length;
             console.log(pwLen);
@@ -149,7 +149,6 @@
                 <input type="text" id="id" name="id" onkeyup="idLength(this.value); "placeholder="아이디를 입력해 주세요"/>
                 <input type="password" id="pw" name="pw" onkeyup="pwLength(this.value); " placeholder="비밀번호를 입력해 주세요"/>
                 <button>로그인</button>
-                <div></div>
             </div>
         </div>
     </div>
